@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>REQUEST</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+             body {
+                background-color: #f2f2f2;
+                background: url(https://thumbs.dreamstime.com/b/blood-donation-sign-22329888.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center center;
+            }
+            .header {
+                position: relative;
+            }
+            .request-form {
+                border: 2px solid rgb(1, 62, 87);
+                border-radius: 40px;
+                backdrop-filter: blur(10px);
+                padding: 40px;
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                width: 400px;
+                transform: translate(85%, 50%);
+            }
+            .input-container{
+                position: relative;
+                border-bottom: 2px solid;
+                margin: 30px 0;
+                align-items: space-between;
+            }
+        </style>
+      </head> 
+<body>
+    <header>
+        <header>
+          <div class="logo">
+            <a href="#"><img src="https://thumbs.dreamstime.com/b/blood-donation-sign-22329888.jpg" alt="logo" /></a>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About-Us.html"> About Us</a></li>
+              <li><a href="Contact-us.html"> Contact Us</a></li>
+              <li><a href="Sign-up.html"> Sign Up </a></li>
+              <li><a href="Login.html">Login</a></li>
+              <li><a href="Main(home).html">Register</a></li>
+              </ul>
+              </nav>
+        </header>
+      </header>
+      <div class="request-form">
+        <div class="input-form">
+            <h1 style="text-align: center;">Request form</h1>
+            <form action="">
+                <label for="bgroup">Blood Group</label>
+                <select id="bgroup">
+                    <option>--</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>  <br>
+                <label for="pname">Patient name</label>
+                <input type="text" id="pname" required><br>
+                <label for="mno">Mobile number</label>
+                <input type="text" id="mno" pattern="[0-9]{10}" required><br>
+                <label for="altmno">Alternate Mobile number</label>
+                <input type="text" id="altmno" pattern="[0-9]{10}"><br>
+                <label for="hsp">Hospital</label>
+                <input type="text" id="hsp" required><br>
+                <label for="add">Address</label>
+                <input type="text" id="add" required><br>
+                <label for="report">Reports</label>
+                <input type="file" id="report"><br>              
+                  
+                <button type="submit" class="submit">Submit</button> 
+            </form>
+        </div>
+</body>
+</html>
